@@ -1,0 +1,61 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  
+ # test-infra:
+ #   runs-on: ubuntu-latest
+ #   timeout-minutes: 2
+ #   steps:
+ #     - uses: actions/checkout@v3
+ #     - uses: actions/setup-python@v4
+ #       with: 
+ #         python-version: '3.9'
+ #     - uses: actions/setup
+ #     - name: test-lambda
+ #       run: cd Cloud-Resume-Challenge-3/Py_Lambda/ && python test
+
+  build-n-deploy-ifra:
+    #needs: test-infra
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with: 
+          python-version: '3.9'
+      - uses: aws-actions/setup-sam@v2
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-central-1
+      - name: sam-build
+        working-directory: Cloud-Resume-Challenge-3
+      - name: sam-deploy --no-confirm-changeset --no-fail --no-fail-on-empty-changeset
+        working-directory: Cloud-Resume-Challenge-3
+  
+  deploy-site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v3
+      - uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --delete
+        env:
+          AWS_S3_BUCKET: crc-mz
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-central-1
+          SOURCE_DIR: Cloud-Resume-Challenge-3
+      
