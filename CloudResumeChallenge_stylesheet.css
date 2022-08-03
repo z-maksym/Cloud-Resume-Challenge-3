@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* CSS Variables */
+:root {
+  --normal-font: 400;
+  --bold-font: 600;
+  --bolder-font: 900;
+  --primary-color: #0652dd;
+  --secondary-color: #ea2027;
+  --line-height: 1.7rem;
+  --transition: 0.4s ease-in;
+}
+
+/* Smooth scroll effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+/* content above to be tested */
+
+
+/* Applies to the entire body of the HTML document (except where overridden by more specific
+selectors). */
+body {
+    margin: auto;
+    background-color: white;
+    font-family: arial, sans-serif;
+    font-size: auto;
+    width:auto;
+    max-width: 926px;
+    border: whitesmoke 2px solid;
+}
+      
+  /* Main title style*/
+  h1 {
+    font-size: 35px;
+    font-weight:lighter ;
+    font-style: italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 5px;
+    border-bottom: #0652dd 2px solid;
+  
+  }
+
+  h2 /*Name style*/ {
+    font-size:x-large;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-image: linear-gradient(#686868 0 0);
+    background-position: bottom left; /*Adjust the background-position to move the line*/
+    background-size: 90% 2px; /*Adjust the background size to control length and height*/
+    background-repeat: no-repeat;
+    padding-bottom: 8px; /* this can also control the position */
+  }
+
+  h3 /*section titles style*/ {
+    text-transform: uppercase;
+    font-size:large;
+    font-weight:600;
+    color: black;    
+    text-shadow: 0 0.01em, 0.01em 0, 0.01em 0.01em;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-image: linear-gradient(#686868 0 0);
+    background-position: bottom left; /*Adjust the background-position to move the line*/
+    background-size: 100% 3px; /*Adjust the background size to control length and height*/
+    background-repeat: no-repeat;
+    padding-bottom: 8px; /* this can also control the position */
+  }
+
+  #h4 /*sub-sections style tag e.g. "PROJECT MANAGER – .." line*/ {
+    font-size:18px;
+    color: black;
+    background-image: linear-gradient(#686868 0 0);
+    background-position: bottom left; /*Adjust the background-position to move the line*/
+    background-size: 100% 1.5px; /*Adjust the background size to control length and height*/
+    background-repeat: no-repeat; 
+    margin-bottom: 10px;
+    margin-top: -5px;
+    padding-bottom: 7px; /* this can also control the position */  
+  }
+  
+
+  li {
+    margin-left: 25px;
+    padding: 2px;
+  }
+  
+  th {
+    text-align: left;
+  }
+ 
+  /* photo frame */
+ #pic {
+  background: Img_1;
+  background-size: cover;
+  border: 2px solid grey;
+  border-radius:50% 50% 50% 50%;
+  width:130px;
+  height:130px;
+
+}
+#resume_header {
+  background-color: whitesmoke;
+  width: 100%;
+}
+#resume_header_sub {
+  line-height: 25px;
+}
+
+#content_table {
+  width: 100%;
+}
+
+#main_content {
+  box-sizing: content-box;
+  width: 90%;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+  #languages_table {
+    margin-top: 25px;
+    margin-bottom: -15px;
+    width: 100%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+    column-count: 6;
+    empty-cells: show;
+    line-height: 30px;
+    
+    
+    /* column-width: auto; */
+  }
+  
+  #languages_table tr:nth-child(2) {
+    border-top: 1px solid grey;
+    line-height: 15px;
+  }
+  #languages_table tr:nth-child(3) {
+    border-top: 1px solid grey;
+    background-color: rgb(240,240,240);
+  }
+  #languages_table tr:nth-child(4) {
+    border-top: 1px solid grey;
+  }
+  #languages_table tr, td {
+    padding: 3px;
+  }
+  #languages_table th:nth-of-type(1) {
+    text-align: left;
+    padding-left: 5px;
+
+  }
+  #languages_table caption {
+    font-style: italic;
+    text-align: left;
+    font-size: 85%;
+    padding: 5px;
+  }
+  /* Applies to all elements with <... class="someclass"> specified. */
+  .someclass { color: red; }
+  
+  /* Applies to the element with <... id="someid"> specified. */
+  #someid { color: green; }
+
+/* randm stuf to test commit signing */
