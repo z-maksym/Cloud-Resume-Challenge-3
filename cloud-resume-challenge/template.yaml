@@ -37,6 +37,8 @@ Resources:
     Type: AWS::CertificateManager::Certificate
     Properties:
       DomainName: mz-cloud-resume-challenge.site
+      SubjectAlternativeNames: 
+        - www.mz-cloud-resume-challenge.site
       ValidationMethod: DNS
   
   MyDistribution:
