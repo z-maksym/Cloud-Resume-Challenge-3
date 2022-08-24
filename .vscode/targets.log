@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Mon Aug 22 10:38:13 2022
+# Make data base, printed on Wed Aug 24 01:09:09 2022
 
 # Variables
 
@@ -46,13 +46,13 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 GOPATH = /Users/apple/go
 # environment
-LaunchInstanceID = 4FB4DA5E-09D9-4AB5-851E-065A706E364E
+LaunchInstanceID = CFB1DA20-92D8-4BC9-A4F4-F06FDF9663FC
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.WU55x7qI7g/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.PLxmjA8R60/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -144,7 +144,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 607
+VSCODE_PID = 780
 # variable set hash-table stats:
 # Load=67/1024=7%, Rehash=0, Collisions=2/88=2%
 
@@ -154,7 +154,7 @@ VSCODE_PID = 607
 
 # Directories
 
-# . (device 16777223, inode 4407902345): 13 files, no impossibilities.
+# . (device 16777220, inode 4407902345): 13 files, no impossibilities.
 
 # 13 files, no impossibilities in 1 directories.
 
@@ -228,7 +228,7 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Mon Aug 22 10:38:13 2022
+# Finished Make data base on Wed Aug 24 01:09:09 2022
 
  
 make: *** No rule to make target `all'.  Stop.

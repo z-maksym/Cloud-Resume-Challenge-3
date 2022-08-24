@@ -8,6 +8,14 @@
     <link rel="icon" href="data:,"> <!-- this line is supposed to prevent loading of favicon 
     attribution link for fovicon: <a href="https://www.flaticon.com/free-icons/letter-z" title="letter z icons">Letter z icons created by Freepik - Flaticon</a>
     -->
+    <script>
+      fetch('https://ttuet2aon7.execute-api.us-east-1.amazonaws.com/Prod/put')
+          .then(() => fetch('https://ttuet2aon7.execute-api.us-east-1.amazonaws.com/Prod/get'))
+            .then(response => response.json())
+            .then((data) => {
+              document.getElementById('load_count').innerText = data.count 
+            })
+    </script>
  </head>
 
  <body>
@@ -574,12 +582,16 @@
 </div>
 
 <br>
-  <table onload="view_count()">
+  <table>
     <tr>
       <td>load count playground #</td>
     </tr>
     <tr>
-        <td><p id='load_count'></p></td>
+    <td>This page has been loaded:</td>
+    <td>
+        <span id='load_count' />
+      </td>
+    <td>times</td>
     </tr> 
   </table>
    
@@ -587,27 +599,6 @@
     <div>You are visitor number: 0</div>
    --->
 </body>
-<script>
-  function view_count(){
-    fetch ("https://veuhd4jd49.execute-api.eu-central-1.amazonaws.com/dev/")
-    .then(response => response.json())
-    .then(data => document.getElementById('load_count').innerHTML="This page has been loaded# "+data +"times.")
-    .catch(err => console.log(err));
-  }
-</script>
-<!---
-<script type="text/javascript" src="js/apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script>
-  '' <script type="text/javascript" src="js/apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
-  '' <script type="text/javascript" src="js/apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
-  '' <script type="text/javascript" src="js/apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
-  '' <script type="text/javascript" src="js/apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
-  '' <script type="text/javascript" src="js/apiGateway-js-sdk/lib/url-template/url-template.js"></script>
-  '' <script type="text/javascript" src="js/apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
-  '' <script type="text/javascript" src="js/apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
-  '' <script type="text/javascript" src="js/apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
-  '' <script type="text/javascript" src="js/apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
-  '' <script type="text/javascript" src="js/apiGateway-js-sdk/apigClient.js"></script>
--->
 
 <!--- main version--->
 </html>
