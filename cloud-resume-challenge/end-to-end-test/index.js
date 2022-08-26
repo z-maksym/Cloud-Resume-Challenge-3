@@ -11,7 +11,7 @@ const sleep = async (r) => await new Promise(r => setTimeout(r, 2000));
     await page.goto(website)
     console.log(`Waiting for API calls to be made`)
     await sleep(2000)
-    const element = await page.$("#replaceme")
+    const element = await page.$("#load_count")
     const property = await element.getProperty('innerHTML');
     const count = await property.jsonValue();
     console.log(`Getting page element, count: ${count}`)
