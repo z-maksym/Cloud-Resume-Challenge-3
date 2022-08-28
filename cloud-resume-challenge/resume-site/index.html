@@ -13,7 +13,7 @@
           .then(() => fetch('https://ttuet2aon7.execute-api.us-east-1.amazonaws.com/Prod/get'))
             .then(response => response.json())
             .then((data) => {
-              document.getElementById('load_count').innerText = data.count 
+              document.getElementById('load_count').innerText = "This page has been loaded: " + data.count + " times."
             })
     </script>
  </head>
@@ -25,8 +25,16 @@
       <tr>
         <th colspan="2"><h1> <center>Cloud Resume Challenge - MZ</center></h1></th>
       </tr>
+      <tr height="5px"><td></td></tr>
       <tr>
-        <td><br><br></td>
+        <th colspan="2">GitHub Repository - <a href="https://github.com/z-maksym/Cloud-Resume-Challenge-3">https://github.com/z-maksym/Cloud-Resume-Challenge-3</a></th>
+      </tr>
+      <tr height="7px"><td></td></tr>
+      <tr>
+          <td colspan="2"><center><span id='load_count' /></center></td>
+        </tr>
+      <tr>
+        <td colspan="2"><hr><br></td>
       </tr>
       <tr>
         <!-- <td><center><img src="Img_1.jpg" id="pic"></center></td> -->
@@ -582,19 +590,6 @@
 </div>
 
 <br>
-  <table>
-    <tr>
-      <td>load count playground #</td>
-    </tr>
-    <tr>
-    <td>This page has been loaded:</td>
-    <td>
-        <span id='load_count' />
-      </td>
-    <td>times</td>
-    </tr> 
-  </table>
-   
    <!--- 
     <div>You are visitor number: 0</div>
    --->
