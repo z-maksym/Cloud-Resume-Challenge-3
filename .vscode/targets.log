@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Mon Sep 12 12:23:57 2022
+# Make data base, printed on Tue Sep 13 01:01:03 2022
 
 # Variables
 
@@ -22,7 +22,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/apple/Documents/GitHub/Cloud-Resume-Challenge-3
+CURDIR := /Users/apple/Documents/GitHub/CRC-3-TF/Cloud-Resume-Challenge-3
 # makefile
 SHELL = /bin/sh
 # environment
@@ -46,17 +46,17 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 GOPATH = /Users/apple/go
 # environment
-LaunchInstanceID = A66D923C-0ACD-4D0E-8C91-1C4FFF63108D
+LaunchInstanceID = 7E5BCCA9-7E7B-4D9C-9C3A-DBDEF155AD40
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.y1C9tIRyMW/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.F0yvmYO17Z/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-PWD = /Users/apple/Documents/GitHub/Cloud-Resume-Challenge-3
+PWD = /Users/apple/Documents/GitHub/CRC-3-TF/Cloud-Resume-Challenge-3
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
@@ -70,7 +70,7 @@ VSCODE_CODE_CACHE_PATH = /Users/apple/Library/Application Support/Code/CachedDat
 # environment
 LOGNAME = apple
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 ZSH = /Users/apple/.oh-my-zsh
 # environment
@@ -132,7 +132,7 @@ PAGER = less
 # environment
 LC_ALL = C
 # environment
-SECURITYSESSIONID = 186a7
+SECURITYSESSIONID = 186a6
 # automatic
 ^F = $(notdir $^)
 # default
@@ -144,7 +144,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 833
+VSCODE_PID = 722
 # variable set hash-table stats:
 # Load=67/1024=7%, Rehash=0, Collisions=2/88=2%
 
@@ -154,7 +154,7 @@ VSCODE_PID = 833
 
 # Directories
 
-# . (device 16777220, inode 4407902345): 10 files, no impossibilities.
+# . (device 16777220, inode 4409408300): 10 files, no impossibilities.
 
 # 10 files, no impossibilities in 1 directories.
 
@@ -228,7 +228,7 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Mon Sep 12 12:23:57 2022
+# Finished Make data base on Tue Sep 13 01:01:03 2022
 
  
 make: *** No rule to make target `all'.  Stop.

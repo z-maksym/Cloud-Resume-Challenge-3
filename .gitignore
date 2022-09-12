@@ -1,5 +1,31 @@
-supplementary & stuff
-.terraform
-cloud-resume-challenge/.terraform
-cloud-resume-challenge/.terraform/providers/registry.terraform.io/hashicorp/aws/4.28.0/darwin_amd64/terraform-provider-aws_v4.28.0_x5
-cloud-resume-challenge/.terraform/providers/registry.terraform.io/hashicorp/aws/4.29.0/darwin_amd64/terraform-provider-aws_v4.29.0_x5
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+cloud-resume-challenge/*.tfstate
+cloud-resume-challenge/*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Ignore any .tfvars files that are generated automatically for each Terraform run. Most
+# .tfvars files are managed as part of configuration and so should be included in
+# version control.
+#
+# example.tfvars
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include override files you do wish to add to version control using negated pattern
+#
+# !example_override.tf
+
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+# example: *tfplan*
+
+supplementary&stuff/
